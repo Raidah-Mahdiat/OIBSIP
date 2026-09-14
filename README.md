@@ -79,46 +79,5 @@ I used these MDN pages as my primary reference while writing the JavaScript:
 
 MIT — free to use, modify, and distribute.
 
-TASK 2 · Tribute Page
-Objective: Design and build a visually engaging tribute page dedicated to a historical figure, scientist, artist, or public figure you admire.
-Tech Stack: HTML5, CSS3 (JavaScript optional)
-Feature Checklist:
-[ ] Page title with the subject's name and a one-line tagline
-[ ] A prominent image (use a royalty-free image — source from Unsplash or Wikimedia Commons)
-[ ] A biography or tribute section: at least 3–4 paragraphs of original written content
-[ ] A timeline or key achievements section (ordered list or styled cards)
-[ ] A quote block: a notable quote from or about the subject, styled distinctly
-[ ] At least 2 different background colours used across sections
-[ ] At least 2 font styles explored (e.g., serif for headings, sans-serif for body)
-[ ] Responsive layout
-Self-Sourcing Guideline: Use Wikipedia or Britannica to research your subject for factual content (paraphrase — do not copy). Source images from Unsplash.com (search by person's name or era) or Wikimedia Commons for public domain images. Search "HTML CSS tribute page freeCodeCamp" for structural guidance.
 
-TASK 3 · To-Do Web App
-Objective: Develop an interactive to-do list application that allows users to manage daily tasks with add, complete, edit, and delete functionality, organised into pending and completed lists.
-Tech Stack: HTML5, CSS3, JavaScript (Vanilla or with a small library like Alpine.js)
-Feature Checklist:
-[ ] Input field + "Add Task" button to create new tasks
-[ ] Newly added tasks appear immediately in the Pending Tasks list
-[ ] Each task has a "Mark Complete" toggle — completed tasks move to the Completed Tasks list
-[ ] Each task has an Edit button that allows the task text to be modified inline
-[ ] Each task has a Delete button that permanently removes it from either list
-[ ] Task count indicators: "X pending" and "Y completed" displayed above each list
-[ ] (Bonus) Timestamp displayed on each task showing when it was added and/or completed
-[ ] (Bonus) Tasks persist across page refreshes using localStorage
-[ ] Empty state messaging: display a friendly message when a list has no items
-Self-Sourcing Guideline: Search "JavaScript to-do list app tutorial DOM manipulation" to understand the core pattern. For localStorage persistence, search "localStorage JavaScript beginners guide MDN". Look at GitHub repositories with the topic "todo-app vanilla-js" for architecture inspiration (read — don't copy code).
-
-TASK 4 · Login Authentication System
-Objective: Build a simple client-side (or full-stack) authentication system featuring user registration, login validation, and access to a protected page.
-Tech Stack: Choose one approach — (A) Front-end only: HTML/CSS/JavaScript with localStorage, (B) Full-stack: Node.js + Express + a simple JSON or SQLite store, or (C) Python Flask with session management.
-Feature Checklist:
-[ ] Registration page: fields for username/email and password, with a "Register" button
-[ ] Password validation on registration: minimum 8 characters, at least 1 number
-[ ] Duplicate username/email check — display an error if the user already exists
-[ ] Login page: fields for username/email and password, with a "Login" button
-[ ] Incorrect credential handling: display a clear error message (do not reveal which field is wrong)
-[ ] Protected/Dashboard page: only accessible after successful login; redirect to login page if accessed directly without a session
-[ ] Logout button on the dashboard that clears the session/localStorage and redirects to login
-[ ] Passwords must not be stored in plain text — use a basic hashing approach (e.g., bcrypt for Node/Python, or a SHA-256 approach for client-side)
-[ ] Basic form validation on both pages (no empty submissions)
-Self-Sourcing Guideline: Search "login authentication system JavaScript localStorage tutorial" for the front-end approach, or "Node.js Express login authentication bcrypt tutorial" for the full-stack approach. Reference the MDN article on "HTTP cookies and sessions" for understanding session management concepts.
+ code).authentication bcrypt tutorial" for the full-stack approach. Reference the MDN article on "HTTP cookies and sessions" for understanding session management concepts.
