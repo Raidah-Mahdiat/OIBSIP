@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple client-side authentication demo">
+  <title>Northstar | Account access</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="brand-panel">
+      <a class="brand" href="index.html" aria-label="Northstar home"><span class="brand-mark">N</span>Northstar</a>
+      <div class="brand-copy">
+        <p class="eyebrow">Private workspace</p>
+        <h1>Make room for your next clear idea.</h1>
+        <p class="muted-on-dark">A small, focused space for the work that deserves your full attention.</p>
+      </div>
+      <div class="orbit-art" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="panel-footnote">Your account stays on this device for this demo.</p>
+    </section>
+
+    <section class="form-panel">
+      <div class="form-wrap">
+        <div class="form-heading">
+          <p class="eyebrow accent-text" id="form-eyebrow">Welcome back</p>
+          <h2 id="form-title">Sign in to Northstar</h2>
+          <p class="helper" id="form-helper">Enter your details to continue to your workspace.</p>
+        </div>
+
+        <div class="mode-switch" role="tablist" aria-label="Account access">
+          <button class="mode-button is-active" id="login-tab" type="button" role="tab" aria-selected="true" aria-controls="login-view">Login</button>
+          <button class="mode-button" id="register-tab" type="button" role="tab" aria-selected="false" aria-controls="register-view">Create account</button>
+        </div>
+
+        <div class="notice" id="form-notice" role="status" aria-live="polite"></div>
+
+        <form id="login-view" class="auth-form" novalidate>
+          <div class="field-group">
+            <label for="login-identity">Username or email</label>
+            <input id="login-identity" name="identity" type="text" autocomplete="username" placeholder="you@example.com">
+            <small class="field-error" data-error-for="login-identity"></small>
+          </div>
+          <div class="field-group">
+            <label for="login-password">Password</label>
+            <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password">
+            <small class="field-error" data-error-for="login-password"></small>
+          </div>
+          <button class="primary-button" type="submit">Login <span aria-hidden="true">&#8594;</span></button>
+          <p class="form-switch">New here? <button type="button" class="text-button" data-switch="register">Create an account</button></p>
+        </form>
+
+        <form id="register-view" class="auth-form is-hidden" novalidate>
+          <div class="field-group">
+            <label for="register-username">Username</label>
+            <input id="register-username" name="username" type="text" autocomplete="username" placeholder="Choose a username">
+            <small class="field-error" data-error-for="register-username"></small>
+          </div>
+          <div class="field-group">
+            <label for="register-email">Email</label>
+            <input id="register-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+            <small class="field-error" data-error-for="register-email"></small>
+          </div>
+          <div class="field-group">
+            <label for="register-password">Password</label>
+            <input id="register-password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters">
+            <small class="field-error" data-error-for="register-password"></small>
+          </div>
+          <p class="password-hint"><span id="length-check" class="check-dot"></span> 8+ characters <span id="number-check" class="check-dot"></span> 1 number</p>
+          <button class="primary-button" type="submit">Register <span aria-hidden="true">&#8594;</span></button>
+          <p class="form-switch">Already have an account? <button type="button" class="text-button" data-switch="login">Log in</button></p>
+        </form>
+
+        <p class="security-note"><span aria-hidden="true">&#10003;</span> Passwords are hashed before they are stored on this device.</p>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

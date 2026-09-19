@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your protected Northstar workspace">
+  <title>Northstar | Workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-nav">
+    <a class="brand" href="dashboard.html"><span class="brand-mark">N</span>Northstar</a>
+    <button id="logout-button" class="logout-button" type="button"><span aria-hidden="true">&#8599;</span> Log out</button>
+  </header>
+  <main class="dashboard-shell">
+    <section class="welcome-block">
+      <p class="eyebrow accent-text">Your workspace</p>
+      <h1>Good to see you, <span id="user-name">there</span>.</h1>
+      <p class="dashboard-intro">This is a protected space. Your session is active in this browser tab.</p>
+    </section>
+    <section class="dashboard-grid" aria-label="Workspace overview">
+      <article class="feature-card feature-card-main">
+        <div class="card-icon">&#10022;</div>
+        <p class="eyebrow">Today</p>
+        <h2>Keep your focus close.</h2>
+        <p>Your account is ready. This protected page is only available after a successful login.</p>
+        <div class="progress-line"><span></span></div>
+        <div class="card-meta"><span>Workspace health</span><strong>Good</strong></div>
+      </article>
+      <article class="feature-card warm-card">
+        <div class="card-icon">&#9672;</div>
+        <p class="eyebrow">Account</p>
+        <h2 id="user-email">you@example.com</h2>
+        <p>Signed in securely for this session.</p>
+      </article>
+      <article class="feature-card light-card">
+        <div class="card-icon">&#10003;</div>
+        <p class="eyebrow">Security</p>
+        <h2>Protected</h2>
+        <p>Your password is represented by a SHA-256 hash, never plain text.</p>
+      </article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
